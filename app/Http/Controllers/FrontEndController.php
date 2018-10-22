@@ -11,6 +11,7 @@ class FrontEndController extends Controller
 {
     public function index()
     {
+    // test comment
         return view('welcome')
             ->with('title', Setting::first()->site_name)
             ->with('categories', Category::take(6)->get())
