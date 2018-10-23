@@ -45,7 +45,16 @@ php artisan key:generate
 ```
 
 * Then open `database.php` and `.env` and change username and password  as per
-PGSQL installation
+PGSQL installation.
+
+```bash
+DB_CONNECTION=pgsql
+DB_HOST=hostname
+DB_PORT=5432
+DB_DATABASE=Your database name
+DB_USERNAME=Your database username
+DB_PASSWORD=Your database password
+```
 
 ```bash
 php artisan migrate
